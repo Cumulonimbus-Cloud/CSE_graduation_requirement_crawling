@@ -45,6 +45,7 @@ def get_CSV():
     with open('table_data.csv', 'r', newline='', encoding='utf-8') as csvfile:
         reader = csv.reader(csvfile)
         data = list(reader)
+        #CSV 파일 편집
         data[1][0]="졸업요구조건"
         data[1][4]="비고"
         data[2][4]=data[4][1]
